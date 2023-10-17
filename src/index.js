@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { Provider } from 'react-redux';
+import store from './store/counter';
+import Counter from './Counter';
+import Posts from './Post';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+
+<Provider store={store}>
+
+    <Posts />
+    </Provider>
+  
   </React.StrictMode>
 );
 
