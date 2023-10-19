@@ -7,13 +7,16 @@ import { Provider } from 'react-redux';
 import store from './store/counter';
 import Counter from './Counter';
 import Posts from './Post';
+import SagaToolKitExample from './SagaToolKitExample';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
 <Provider store={store}>
 
-    <Posts />
+    {/* <Posts /> */}
+
+  <SagaToolKitExample/>
     </Provider>
   
   </React.StrictMode>
